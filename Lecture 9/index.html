@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- creating forms in html  -->
+    <form action="">
+        <h1>Event Registration</h1>
+        <label for="name">Name:</label>
+        <br/>
+        <input type="text" id="name">
+        <br/>
+        <label for="email">Email:</label>
+        <br/>
+        <input type="email" name="emailid" id="email">
+        <br/>
+        <label for="number">Phone:</label>
+        <br/>
+        <input type="tel" name="number" id="number">
+        <br/>
+        <label for="job">occupation:</label>
+        <br/>
+        <select name="occupation" id="job">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="other">Other</option>
+        </select>
+        <br/>
+
+        <fieldset>
+            <legend>Topics of Interest:</legend>
+            <input type="checkbox" name="fav_language" id="html">
+            <br/>
+            <label for="html">HTML</label>
+            <br/>
+            <input type="checkbox" name="fav_language" id="css">
+            <br/>
+            <label for="css">CSS</label>
+            <br/>
+            <input type="checkbox" name="fav_language" id="javascript">
+            <br/>
+            <label for="javascript">JavaScript</label>
+            <br/>
+        </fieldset>
+        <label for="comments">Comments:</label>
+        <br/>
+        <textarea name="comments" id="comment" cols="80" rows="5"></textarea>
+        <!-- we can also create button using input tag in whic type need to be submit -->
+        <input type="button" value="Register">
+    </form>
+</body>
+</html>

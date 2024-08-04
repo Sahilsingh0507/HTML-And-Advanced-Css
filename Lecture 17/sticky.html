@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            border: solid 1px black;
+        }
+
+        .container{
+            height: 8000px;
+            background-color: aqua;
+        }
+
+
+        img{
+            margin: 10px;
+        }
+
+        .image3{
+            /* first you have to specify the position as sticky and you have to give it a value from where and what position it should stick  */
+            position: sticky;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- img tag is inline-block element because it respects the custom height width margin padding and it behaves as inline  -->
+        <img class="image1" src="Sahil.jpg" alt="image 1" width="300px" height="300px">
+        <img class="image2" src="Sahil 2.jpg" alt="image 2" width="300px" height="300px">
+        <img class="image3" src="Sahil 3.jpg" alt="image 3" width="300px" height="300px">
+        <img class="image4" src="Sahil 4.jpg" alt="image 4" width="300px" height="300px">
+    </div>
+</body>
+</html>

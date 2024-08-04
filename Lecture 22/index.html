@@ -1,0 +1,45 @@
+<!-- box shadow  -->
+<!-- Css shadow effects  -->
+<!-- basic syntax of shadow  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            background-color: aquamarine;
+            width: 330px;
+            height: 330px;
+            border: 1px solid brown;
+            margin: 5px;
+            padding: 5px;
+            /* using box shadow in x and y offset  */
+            /* if you use negative value to x and y offsets their direction will be opposite to that of positive values  */
+            box-shadow: 10px 15px brown;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <img src="logo.png" alt=""/>
+            <h2>Welcome to Codehelp</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quam, accusamus tempora voluptatum aspernatur at tempore recusandae harum quasi nemo!</p>
+        </div>
+    </div>
+</body>
+</html>

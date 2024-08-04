@@ -1,0 +1,44 @@
+<!-- box shadow  -->
+<!-- creating shadow using rgba color  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            background-color: aquamarine;
+            width: 330px;
+            height: 330px;
+            border: 1px solid brown;
+            margin: 5px;
+            padding: 5px;
+            /* creating shadow using rgba format  */
+            /* you can also give color to the shadow using rgba format  */
+            box-shadow: 10px 15px 5px 100px rgba(78, 158, 211,0.7);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <img src="logo.png" alt=""/>
+            <h2>Welcome to Codehelp</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quam, accusamus tempora voluptatum aspernatur at tempore recusandae harum quasi nemo!</p>
+        </div>
+    </div>
+</body>
+</html>

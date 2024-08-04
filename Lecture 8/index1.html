@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <!--  fieldset is used to wrap up a particular section (used for wrapping many form elements in html) -->
+        <fieldset>
+            <!-- legend is used to give caption to the section wrapped in  fieldset  -->
+            <legend>HTML Form Dummy</legend>
+        <!-- using label and input tags in form  -->
+        <label for="datepicker">Choose Date:</label>
+        <input type="date" id="datepicker">
+
+        <br/>
+        <br/>
+        <!-- using label tag in forms  -->
+        <label for="selector1">Choose your Dishes:</label>
+        <!-- using select tag in forms  -->
+        <select name="dishes" id="selector1">
+            <option value="magii">Maggi</option>
+            <option value="kurkure">Kurkure</option>
+            <option value="chips">Chips</option>
+        </select>
+
+        <br/>
+        <br/>
+
+        <label for="selector2">Choose 2nd Dish:</label>
+        <!-- hold the button control in windows and command in mac to select more than one item  -->
+        <!-- multiple attribute helps us to select 2 options at a time  -->
+        <select name="selector2" id="selector2" multiple>
+            <option value="maggi">Maggi</option>
+            <option value="biscuit">Biscuit</option>
+            <option value="kurkure">Kurkure</option>
+            <option value="chips">Chips</option>
+        </select>
+
+        <br/>
+        <br/>
+        <button>Main hu button</button>
+
+        <br/>
+        <br/>
+        <!-- using text area in html forms  -->
+        <textarea name="textArea1" id="textArea1" cols="30" rows="10" placeholder="Enter text here...."></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>

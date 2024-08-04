@@ -1,0 +1,64 @@
+<!-- difference between sticky and fixed  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: solid 1px black;
+            height: 8000px;
+            background-color: aqua;
+        }
+
+        .box{
+            height: 5000px;
+            background-color: aquamarine;
+        }
+        
+        .box1,.box2,.box3,.box4{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+        }
+
+        .box1{
+            background-color: green;
+        }
+        /* i want to change position of box2  */
+        .box2{
+            background-color: blue;
+            
+        }
+
+        .box3{
+            background-color: purple;
+            /* the syntax for sticky is this first you need to select the element and mark it position to sticky and then specify its position in webpage  */
+            /* sticky is sticky inside its parent container only  */
+            position: sticky;
+            top: 25px;
+        }
+
+        .box4{
+            background-color: red;  
+            /* floats on the position when you scroll irrespective of parent entity  */
+            position: fixed;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+
+    <div class="box">
+
+    </div>
+</body>
+</html>

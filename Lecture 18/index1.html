@@ -1,0 +1,32 @@
+<!-- relative units  vh(used for viewport height) and vw(used for viewport width) these adjust size with respect to viewport-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* vh and vw are used for units which takes reference from viewport  */
+        /* with vh we can adjust height of the element taking viewport as reference */
+        /* with vw we can adjust width of the element taking viewport as reference  */
+        .container{
+            background-color: beige;
+            border: 1px solid green;
+            /* width of the container should be 50 percent of viewport  */
+            width: 50vw;
+            /* height of the container should be 100 percent of viewport  */
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Welcome to CodeHelp
+    </div>
+</body>
+</html>

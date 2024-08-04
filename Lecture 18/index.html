@@ -1,0 +1,43 @@
+<!-- relative units % these adjust size with respect to their closest parent  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            border: 2px solid red;
+            /* manages and set the width to 12 percent of the total width of the screen  */
+            width: 12%;
+
+        }
+
+        .parent{
+            border: 1px solid black;
+            background-color: beige;
+            width: 50%;
+        }
+
+        .child{
+            border: 1px solid green;
+            background-color: aqua;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Welcome to codeHelp
+    </div>
+
+    <!-- understanding parent child  -->
+    <!-- the percentage unit used to define dimension depend on parent width and it considers parent width as 100 and reduces it size relative to parent  -->
+    <div class="parent">
+        <div class="child">
+            Child
+        </div>
+    </div>
+</body>
+</html>

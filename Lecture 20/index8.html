@@ -1,0 +1,80 @@
+<!-- using  order and flex shrink property in flex  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            /* by giving the value flex to the display property the container now became flex container  */
+            display: flex;
+            /* by default the box or the elements placed in the parent container are aligned in the row if you want to change then apply this property  */
+            /* you can also reverse the elements in rows and columns using flex direction */
+            flex-direction: row;
+            /* if you want the elements not to change its width when the screen width is decreasing then use the property  */
+            /* it will not change the width of elements upto when it has enough space to maintain its width if the screen size decreases beyond that the elements will start squuezing  */
+            /* flex-wrap: wrap; */
+
+            height: 800px;
+            /* justify content property helps to align the flex items along main axis by giving value center start end etc  */
+            justify-content: start;
+            /* align items property helps to align the flex items along cross axis by giving value like center start end etc  */
+            /* by default align item property value is set to stretch but it will show only if you have not given any height to flex items  */
+            align-items: start;
+            /* there is multiple line of spacing between the elements when width is decreased */
+            /* by using align content property we can counter this  */
+            /* again you can give values like start end center etc  */
+            align-content: center;
+        }
+
+        .box{
+            /* height: 200px;
+            width: 200px; */
+            border: 1px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #box1{
+            background-color: aqua;
+            /* order: 500; */
+            /* this means while decresing the screen width the box 1 will shrink 4 times faster compared to remaining items  */
+            /* flex-shrink: 4; */
+            /* flex-grow: 5; */
+            align-self: center;
+        }
+
+        #box2{
+            background-color: blue;
+            /* flex-grow: 1; */
+        }
+
+        #box3{
+            background-color: orange;
+            /* flex-grow: 1; */
+        }
+
+        #box4{
+            background-color: brown;
+            /* order: -1; */
+            /* flex-grow: 1; */
+            /* this property helps to specify initial dimensions of the box  */
+            /* flex-basis: 400px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
+</body>
+</html>

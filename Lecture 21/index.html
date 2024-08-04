@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            border: 3px solid black;
+        }
+
+        /* Using media queries in css for responsiveness  */
+        /* if your device width is equal or above 400px this citeria will be applied  */
+        @media (min-width:500px){
+            .box{
+                background-color: green;
+            }
+        }
+
+        /* if your device width is equal or below 300px this criteria will be applied  */
+        @media (max-width:300px) {
+            .box{
+                background-color: beige;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Hello Jee
+    </div>
+</body>
+</html>

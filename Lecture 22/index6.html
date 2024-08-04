@@ -1,0 +1,46 @@
+<!-- box shadow  -->
+<!-- initializing variable in css  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            /* initializing a variable syntax  */
+            /* these variable are only valid in this box outside of this box there is no scope of these variables  */
+            --primary-color:green;
+            --custom-width:330px;
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid brown;
+            margin: 5px;
+            padding: 5px;
+            box-shadow: 10px 15px red, 15px 25px var(--primary-color);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <img src="logo.png" alt=""/>
+            <h2>Welcome to Codehelp</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quam, accusamus tempora voluptatum aspernatur at tempore recusandae harum quasi nemo!</p>
+        </div>
+    </div>
+</body>
+</html>

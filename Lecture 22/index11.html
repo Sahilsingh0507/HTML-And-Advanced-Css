@@ -1,0 +1,47 @@
+<!-- text shadow  -->
+<!-- another syntax of text shadow  without blur radius and color  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            background-color: aquamarine;
+            width: 330px;
+            height: 330px;
+            border: 1px solid brown;
+            margin: 5px;
+            padding: 5px;
+            
+        }
+
+        #head1{
+            /* another syntax for text shadow  without using blur radius and color by default the color of shadow is black*/
+            text-shadow: 12px 13px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <img src="logo.png" alt=""/>
+            <h2 id="head1">Welcome to Codehelp</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quam, accusamus tempora voluptatum aspernatur at tempore recusandae harum quasi nemo!</p>
+        </div>
+    </div>
+</body>
+</html>
