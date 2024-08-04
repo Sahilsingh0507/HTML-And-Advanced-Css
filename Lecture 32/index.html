@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3D Transforms</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100%;
+        }
+
+        .container{
+            background-color: antiquewhite;
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+        }
+
+        .items{
+            height: 150px;
+            width: 150px;
+            padding: 2rem;
+            background-color: rgb(12, 234, 12);
+            border: 2px solid black;
+        }
+
+        /* rotate along x axis  */
+        #rotateX:hover{
+            transform: rotateX(45deg);
+        }
+
+        /* rotate along y axis  */
+        #rotateY:hover{
+            transform: rotateY(45deg);
+        }
+
+        /* rotate along z axis  */
+        #rotateZ:hover{
+            transform: rotateZ(45deg);
+        }
+
+
+        /* translate on x axis  */
+        #translateX:hover{
+            transform: translateX(100px);
+        }
+
+
+        /* translate on y axis  */
+        #translateY:hover{
+            transform: translateY(100px);
+        }
+
+        /* translate on z axis  */
+        #translateZ:hover{
+            transform: perspective(300px) translateZ(100px);
+        }
+
+        /* scale in x direction  */
+        #scaleX:hover{
+            transform: scaleX(1.5);
+        }
+
+        /* scale in y direction  */
+        #scaleY:hover{
+            transform: scaleY(1.5);
+        }
+
+        /* scale in z direction  */
+        #scaleZ:hover{
+            transform: perspective(300px) scaleZ(5) rotateY(30deg);
+        }
+
+        /* skew/ tilt on yz axis  */
+        #skewX:hover{
+            transform: skewX(45deg);
+        }
+
+        /* skew/ tilt on xz axis  */
+        #skewY:hover{
+            transform: skewY(45deg);
+        }
+
+        /* skew/ tilt on x axis  */
+        /* doesnot work invalid property for css  */
+        #skewZ:hover{
+            transform: perspective(300px) skewZ(45deg) rotateY(45deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="rotateX">RotateX</div>
+        <div class="items" id="rotateY">RotateY</div>
+        <div class="items" id="rotateZ">RotateZ</div>
+        <div class="items" id="translateX">TranslateX</div>
+        <div class="items" id="translateY">TranslateY</div>
+        <div class="items" id="translateZ">TranslateZ</div>
+        <div class="items" id="scaleX">ScaleX</div>
+        <div class="items" id="scaleY">ScaleY</div>
+        <div class="items" id="scaleZ">ScaleZ</div>
+        <div class="items" id="skewX">SkewX</div>
+        <div class="items" id="skewY">SkewY</div>
+        <div class="items" id="skewZ">SkewZ</div>
+    </div>
+</body>
+</html>
