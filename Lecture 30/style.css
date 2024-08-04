@@ -1,0 +1,180 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+body{
+    height: 100%;
+    width: 100%
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.container{
+    max-width: 66vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+.headerContainer{
+    margin-bottom: 2.8rem;
+}
+
+.headerTitle{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.headerDesc{
+    max-width: 568px;
+    text-align: center;
+    color: rgb(105, 99, 99);
+    margin: 0 auto;
+
+}
+
+.mainContainer{
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+    /* grid-template-columns: repeat(1,1fr); */
+    /* grid-template-rows: repeat(2,1fr); */
+    grid-template-columns: repeat(auto-fit,minmax(250px,300px));
+}
+
+/* @media (min-width:935px) {
+    .mainContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width:1380px) {
+    .mainContainer{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (min-width:1870px) {
+    .mainContainer{
+        grid-template-columns: repeat(4,1fr);
+    }
+} */
+
+.cardContainer{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(111, 109, 109);
+    border-radius: 5px;
+    /* height: 16rem; */
+}
+
+
+.cardImageContainer{
+    position: relative;
+    overflow: hidden;
+    height: 10rem;
+}
+
+@media (min-width:768px) {
+    .cardImageConatiner{
+        height: 12rem;
+    }
+}
+
+.cardImage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    object-position: center;
+    position: absolute;
+}
+
+.cardTitleContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+
+}
+
+.cardContainer:hover .cardImage{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+.cardTitle{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(25, 23, 23);
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+
+.cardTitleAnchor:hover .cardTitle{
+    color: rgb(59, 59, 216);
+
+}
+
+.cardDesc{
+    color: rgb(113, 107, 107);
+    font-size: 1rem;
+}
+
+.cardFootercontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.authorContainer{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 1rem;
+}
+
+.authorAvatarContainer{
+    height: 2.5rem;
+    width: 2.5rem ;
+    overflow: hidden;
+    border: 1px solid rgb(180, 166, 166);
+    border-radius: 50%;
+    background-color: rgb(244, 239, 239);
+}
+
+.authorInfoContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.authorName{
+    color: rgb(38, 38, 149);
+    font-size: 0.9rem;
+}
+
+.authorDate{
+    color: rgb(136, 126, 126);
+    font-size: 0.9rem;
+}
+
+.cardTagContainer{
+    font-size: 0.8rem;
+    height: 24.6px;
+    border: 1px solid rgb(74, 71, 71);
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+}
